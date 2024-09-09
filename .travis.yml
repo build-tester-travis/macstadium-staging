@@ -1,17 +1,17 @@
-#test
 os: osx
-osx_image: xcode14.2
+osx_image: xcode14
+language: swift
 
 jobs:
   include:
-    - name: "Job 1"
+    - name: "Job 1 - macOS"
+      os: osx
+      osx_image: xcode14
       script:
-      - echo "Running Job 1"
+        - echo "Running macOS Job 1"
 
-    - name: "Job 2"
+    - name: "Job 2 - macOS"
+      os: osx
+      osx_image: xcode13.4
       script:
-      - echo "Running Job 2"
-
-    - name: "Job 3"
-      script:
-      - echo "Running Job 3"
+        - echo "Running macOS Job 2"
