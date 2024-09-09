@@ -1,16 +1,17 @@
 os: osx
-osx_image: xcode14
-
 jobs:
   include:
     - name: "Job 1 - macOS"
+      osx_image: xcode14
       script:
         - echo "Running macOS Job 1"
 
     - name: "Job 2 - macOS"
+      osx_image: xcode13.4
       script:
         - echo "Running macOS Job 2"
-        
+
     - name: "Job 3 - macOS"
+      osx_image: xcode12.5
       script:
         - echo "Running macOS Job 3"
