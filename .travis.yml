@@ -5,13 +5,9 @@ language: swift
 jobs:
   include:
     - name: "Job 1 - macOS"
-      os: osx
-      osx_image: xcode14
       script:
         - echo "Running macOS Job 1"
 
     - name: "Job 2 - macOS"
-      os: osx
-      osx_image: xcode13.4
       script:
         - echo "Running macOS Job 2"
