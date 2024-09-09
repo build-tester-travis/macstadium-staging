@@ -10,3 +10,7 @@ jobs:
     - name: "Job 2 - macOS"
       script:
         - echo "Running macOS Job 2"
+        
+    - name: "Job 3 - macOS"
+      script:
+        - echo "Running macOS Job 3"
